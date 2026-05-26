@@ -44,4 +44,4 @@ This project focuses on ecommerce sales analysis, customer behaviour analysis, p
 - Enhance customer segmentation and promotional analysis.
 
 ## Dashboard Preview
-![Dashboard Preview](dashboard_image.png)
+![Dashboard Preview](dashboard_overview.png)
