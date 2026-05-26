@@ -1,0 +1,17 @@
+column name,data type,null count,issue,action
+title,text,2,"long messy product names, some truncated name","keep main product title, remove extra marketing text if needed"
+rating,mixed,1026,"text attached with numeric rating, missing values",extract numeric rating into float
+number_of_reviews,numeric,1026,"commas in numbers, missing value",removes commas and convert to integer
+bought_in_last_months,mixed,3219,"text mixed with numbers, k notation, missing value",extractnumeric values and stanadadize
+current/discount price,float,11751,missing values,handle/remove null value
+price_on_variant,mixed text,2,"inconsistant values(price, specs, text labels mixed together)",extract valid price and convert invalid values in null
+listed_price,mixed,2,"prices mixed with text labels like ""no discount""",extract numeric prices and convert invalid text to null
+is_best_seller,categorical,2,inconsistant badge label/ missing value,standardize badge categories
+is_sponsored,categorical,2,minor missing values,standardize categories/handle nulls
+is_couponed,mixed,2,coupon text mixed with percentage value,extract coupon percentage and standardize
+buy_box_avialbility,categorical,14655,missing availibilty status,convert into available/not available flag
+delivery_details,mixed/text,11722,messy text-based partial delivery date information,extract and standardize deilvery info
+sustainablity_badge,categorical,39269,"many missing values, multiple sustainablity categories",standardize categories/handle nulls
+image_url,,2,not usefull for analysis/dashboard,drop column
+product_url,,2071,not usefull for analysis/dashboard,drop column
+collected_at,datetime,2,date and time combined in single feild,seprate date and time if needed
